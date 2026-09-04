@@ -11,7 +11,7 @@ Office.onReady(async function () {
     await Office.addin.setStartupBehavior(Office.StartupBehavior.load);
 
     Office.context.ui.displayDialogAsync(
-      window.location.origin + "/popup.html",
+      new URL("popup.html", window.location.href).href,
       { height: 30, width: 40, displayInIframe: true },
       function (result) {
         if (result.status === Office.AsyncResultStatus.Succeeded) {
