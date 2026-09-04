@@ -5,13 +5,48 @@
 <title>Tower 9 Sale Alert</title>
 <script src="https://appsforoffice.microsoft.com/lib/1/hosted/office.js"></script>
 <style>
-body{font-family:Arial,sans-serif;text-align:center;padding:35px;margin:0}
-h2{font-size:26px;margin:0 0 28px}
-button{padding:10px 32px;font-size:16px;cursor:pointer}
+  body {
+    font-family: "Segoe UI", Arial, sans-serif;
+    text-align: center;
+    padding: 40px 32px;
+    margin: 0;
+    background: #eef3f8;
+    color: #33475b;
+  }
+
+  h2 {
+    font-size: 24px;
+    margin: 0 0 14px;
+    color: #1f4e78;
+  }
+
+  p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: #5b7a99;
+    margin: 0 0 26px;
+  }
+
+  button {
+    padding: 10px 32px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    color: #ffffff;
+    background: #3a6ea5;
+    border: none;
+    border-radius: 6px;
+    transition: background 0.15s ease;
+  }
+
+  button:hover {
+    background: #2c557f;
+  }
 </style>
 </head>
 <body>
 <h2>Tower 9 is open for sale</h2>
+<p>New units in Tower 9 have just been released. Availability is limited, so review the inventory in this workbook and reach out to the sales desk if you'd like to reserve one before it's gone.</p>
 <button onclick="Office.context.ui.messageParent('close')">OK</button>
 </body>
 </html>
